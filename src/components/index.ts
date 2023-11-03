@@ -1,2 +1,5 @@
 export { default as Button } from './Button'
 export { default as Header } from './Header'
+export {default as HeroSection} from './HeroSection'
+export {default as ServicesCards} from './ServicesCards'
+export {default as Details} from './Details'

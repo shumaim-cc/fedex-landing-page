@@ -1,12 +1,16 @@
 import React from 'react'
-/*import Button from '@/components/Button'*/
-import styles from './Home.module.sass'
+import HeroSection from '@/components/HeroSection'
+import ServicesCards from '@/components/ServicesCards'
+import Details from '@/components/Details'
+//import styles from './Home.module.sass'
 
 const HomePage = () => {
   return (
-    <>
-      <div className={styles.container}>this is home page</div>
-    </>
+    <div>
+      <div ><HeroSection /></div>
+      <div ><ServicesCards /></div>
+      <div ><Details/></div>
+    </div>
   )
 }
 
