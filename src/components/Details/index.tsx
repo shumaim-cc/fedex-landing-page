@@ -11,7 +11,7 @@ const Details = () => {
       </h1>
       <section className={styles.section}>
         <div className={styles.sectionleft}>      
-              <Image src={s1} alt="passport application" />
+          <Image src={s1} alt="passport application" />
         </div>
         
           <div className={styles.sectionright}>
@@ -46,9 +46,9 @@ const Details = () => {
         </div>      
       </section>
       <section className={styles.section}>
-        
-          <Image className={styles.sectionleft} src={s3} height={304} width={410} alt="driver license" />
-        
+        <div className={styles.sectionleft}>      
+          <Image src={s3} alt="driver license" />
+        </div>
         <div className={styles.sectionright}>
           <span>3</span>
           <h2 className={styles.sectionheading}>

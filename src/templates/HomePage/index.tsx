@@ -28,9 +28,17 @@ const HomePage = () => {
           </h1>
         </div>
         <div className={styles.wrapper}>
-          {ReviewCardData.map((data, i) => (
-            <Reviews key={i} {...data} />
-          ))}
+          <div className={styles.row}>
+            {ReviewCardData.slice(0,3).map((data, i) => (
+              <Reviews key={i} {...data} />
+            ))}
+          </div>
+          <div className={styles.row}>
+            {ReviewCardData.slice(3,7).map((data, i) => (
+              <Reviews key={i} {...data} />
+            ))}
+          </div>
+          
         </div>
         <div style={{ background: 'green' }}>
           <div style={{ display: 'flex' }}>

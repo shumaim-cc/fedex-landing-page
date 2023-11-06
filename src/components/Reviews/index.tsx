@@ -12,23 +12,21 @@ interface ReviewsProps {
 
 const Reviews = ({ rating, text, title, image }: ReviewsProps) => {
   return (
-    
-      <div className={styles.card}>
-            <div className={styles.cardheader}>
-                <div className={styles.image}>
-                <Image src={image} alt={title} width={48} height={48} />
-                </div>
-                <div>
-                    <h2>{title}</h2>
-                        <div>
-                            {[...Array(rating)].map((_, i) => (
-                                <Star key={i} fillColor={i === 4 ? '#C4C4C4' : '#FF6200'} />
-                            ))}
-                        </div>
-                </div>
-            </div>
-             <p>{text}</p>
-    
+    <div className={styles.card}>
+      <div className={styles.cardheader}>
+          <div className={styles.image}>
+            <Image src={image} alt={title} width={48} height={48} />
+          </div>
+          <div className={styles.reviewbox}>
+              <h2>{title}</h2>
+              <div>
+                {[...Array(rating)].map((_, i) => (
+                    <Star key={i} fillColor={i === 4 ? '#C4C4C4' : '#FF6200'} />
+                ))}
+              </div>
+          </div>
+      </div>
+      <p>{text}</p>
     </div>
   )
 }
