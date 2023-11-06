@@ -10,24 +10,25 @@ const Details = () => {
         <br /> government documents in a hurry
       </h1>
       <section className={styles.section}>
-        
-          <Image className={styles.sectionleft} src={s1} height={350} width={362} alt="passport application" />
-        
-        <div className={styles.sectionright}>
-          <span>1</span>
-          <h2 className={styles.sectionheading}>
-            Choose which <br /> documents you need
-          </h2>
-          <p className={styles.sectiontext}>
-            Whether you need a passport, new titles for your car or a <br />{' '}
-            travel visa, you can get them all quickly through our <br />{' '}
-            partnership with HelloGov.
-          </p>
+        <div className={styles.sectionleft}>      
+              <Image src={s1} alt="passport application" />
         </div>
+        
+          <div className={styles.sectionright}>
+            <span>1</span>
+            <h2 className={styles.sectionheading}>
+              Choose which <br /> documents you need
+            </h2>
+            <p className={styles.sectiontext}>
+              Whether you need a passport, new titles for your car or a <br />{' '}
+              travel visa, you can get them all quickly through our <br />{' '}
+              partnership with HelloGov.
+            </p>
+          </div>
       </section>
 
       <section className={styles.section}>
-        <div className={styles.section2left}>
+        <div className={styles.sectionright}>
           <span>2</span>
           <h2 className={styles.sectionheading}>
             Complete your <br /> application (it’s easy!)
@@ -40,8 +41,9 @@ const Details = () => {
           </p>
         </div>
 
-          <Image className={styles.sectionleft} src={s2} alt="info" />
-      
+        <div className={styles.sectionleft}>      
+              <Image src={s2} alt="info" />
+        </div>      
       </section>
       <section className={styles.section}>
         

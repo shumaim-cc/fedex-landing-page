@@ -12,8 +12,8 @@ const HeroSection = () => {
                  expedited <br /> and in your hands in as little as 1 week.</p>
             <div> 
                 <button className={styles.button}>
-                <span className={styles.buttonText}>Start your application</span>
-                <Image src={arrow} height={20} width={20} alt="arrow" />
+                    Start your application
+                    <Image src={arrow} height={20} width={20} alt="arrow" />
                 </button>
                 <p style={{ fontSize: '14px'}}>Trusted by <span className={styles.orangeText} >100,000+
                 </span> traveller’s every year.</p>
