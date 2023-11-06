@@ -1,9 +1,9 @@
 :root {
-  --black-color: #000000;
-  --primary-color: #4D148C;
-  --secondary-color: #F60;
+    --black-color: #000000;
+    --primary-color: #4D148C;
+    --secondary-color: #F60;
 }
 
 body {
-  color: var(--black-color);
+    color: var(--black-color);
 }
