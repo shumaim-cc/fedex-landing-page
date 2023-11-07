@@ -19,7 +19,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={Jakarta.className}>
         <Header/>
-        {children}
+      {children}
         <Footer/>
       </body>
     </html>
