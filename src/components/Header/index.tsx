@@ -1,4 +1,5 @@
-import { logo, contact } from '@/assets/images'
+import logo from '/public/assets/images/logo.png'
+import contact from '/public/assets/images/contact.png'
 import Image from 'next/image'
 import React from 'react'
 import styles from './Header.module.sass'

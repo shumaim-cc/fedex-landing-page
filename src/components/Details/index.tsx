@@ -1,6 +1,8 @@
 import React from 'react'
 import styles from './Details.module.sass'
-import { s1, s2, s3 } from '@/assets/images'
+import s1 from '/public/assets/images/s1.png'
+import s2 from '/public/assets/images/s2.png'
+import s3 from '/public/assets/images/s3.png'
 import Image from 'next/image'
 const Details = () => {
   return (

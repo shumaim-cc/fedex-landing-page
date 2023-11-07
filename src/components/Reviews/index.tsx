@@ -17,7 +17,7 @@ const Reviews = ({ rating, text, title, image }: ReviewsProps) => {
           <div className={styles.image}>
             <Image src={image} alt={title} width={48} height={48} />
           </div>
-          <div className={styles.reviewbox}>
+          <div>
               <h2>{title}</h2>
               <div>
                 {[...Array(rating)].map((_, i) => (

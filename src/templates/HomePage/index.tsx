@@ -1,14 +1,12 @@
-'use client'
-import React, { useState } from 'react'
 import HeroSection from '@/components/HeroSection'
 import ServicesCards from '@/components/ServicesCards'
 import Details from '@/components/Details'
 import Reviews from '@/components/Reviews'
-import { ReviewCardData } from '@/utils'
+import FAQs from '@/components/FAQs'
+import { QUESTIONS, ReviewCardData } from '@/utils'
 import styles from './Home.module.sass'
 
 const HomePage = () => {
-  const [isOpen, setIsOpen] = useState(false)
   return (
     <div>
       <div>
@@ -29,23 +27,32 @@ const HomePage = () => {
         </div>
         <div className={styles.wrapper}>
           <div className={styles.row}>
-            {ReviewCardData.slice(0,3).map((data, i) => (
+            {ReviewCardData.slice(0, 3).map((data, i) => (
               <Reviews key={i} {...data} />
             ))}
           </div>
           <div className={styles.row}>
-            {ReviewCardData.slice(3,7).map((data, i) => (
+            {ReviewCardData.slice(3, 7).map((data, i) => (
               <Reviews key={i} {...data} />
             ))}
           </div>
-          
         </div>
-        <div style={{ background: 'green' }}>
-          <div style={{ display: 'flex' }}>
-            <p>title</p>
-            <button onClick={() => setIsOpen(!isOpen)}>Open Box</button>
-          </div>
-          {isOpen && <p>description</p>}
+      </div>
+      <div className={styles.faqcontainer}>
+        <div>
+          <h1 className={styles.heading}>
+            Getting government documents <br /> doesn’t have to be confusing.
+          </h1>
+        </div>
+        
+        <div>
+          {QUESTIONS.map((item, i) => {
+            return (
+              <div key={i}>
+                <FAQs title={item.title} question={item.question || 'no ques' } paragraph={item.description} />
+              </div>
+            )
+          })}
         </div>
       </div>
     </div>
