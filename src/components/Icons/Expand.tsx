@@ -10,20 +10,20 @@ const Expand = () => {
       xmlns="http://www.w3.org/2000/svg"
     >
       <rect y="0.81543" width="32" height="32" rx="8" fill="#FF6600" />
-      <g clip-path="url(#clip0_1_423)">
+      <g clipPath="url(#clip0_1_423)">
         <path
           d="M16 10.3154V23.3154"
           stroke="white"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
         <path
           d="M9.5 16.8154H22.5"
           stroke="white"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
       </g>
       <defs>

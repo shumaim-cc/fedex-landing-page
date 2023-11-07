@@ -10,14 +10,14 @@ const Hide = () => {
       xmlns="http://www.w3.org/2000/svg"
     >
       <rect y="0.81543" width="32" height="32" rx="8" fill="#FF6600" />
-      <g clip-path="url(#clip0_1_431)">
+      <g clipPath="url(#clip0_1_431)">
         <rect y="0.81543" width="32" height="32" rx="8" fill="#FF6600" />
         <path
           d="M7.875 16.8154H24.125"
           stroke="white"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
       </g>
       <defs>

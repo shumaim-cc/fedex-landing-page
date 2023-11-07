@@ -28,20 +28,19 @@ const FAQS = ({ paragraph, title, question }: FAQSProps) => {
               <AccordionItemState>
                 {({ expanded }) =>
                   expanded ? (
-                    <h2 className={styles.h2}>{question}</h2>
+                    <h3 className={styles.faqheader}>{question}</h3>
                   ) : (
-                    <h2 className={styles.h2}>{title}</h2>
+                    <h3 className={styles.faqheader}>{title}</h3>
                   )
                 }
               </AccordionItemState>
-
               <AccordionItemState>
                 {({ expanded }) => (expanded ? <Collapse /> : <Expand />)}
               </AccordionItemState>
             </AccordionItemButton>
           </AccordionItemHeading>
           <AccordionItemPanel>
-            <p>{paragraph}</p>
+            <p className={styles.faqanswer}>{paragraph}</p>
           </AccordionItemPanel>
         </AccordionItem>
       </Accordion>
