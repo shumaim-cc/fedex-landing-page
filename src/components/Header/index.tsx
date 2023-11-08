@@ -11,7 +11,7 @@ const header = () => {
       </div>
       
       <div className={styles.headerright}>
-        <p style={{ marginRight: '16px' }}> Need help? </p>
+        <p> Need help? </p>
         <Image src={contact} alt="contact" />
       </div>
     </div>

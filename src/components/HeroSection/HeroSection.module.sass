@@ -20,15 +20,26 @@
     padding: 0 60px 0 20px
 
 .herosectionleft h1
-    line-height: 64px
-    line-spacing: -1.68px
+    //line-height: 64px
+    font-size: 48px
+    font-weight: 700
+
+.herosectionp
+    font-size: 16px
+    font-weight: 400
+    //margin-top: 24px
+    margin-bottom: 48px
+
+.herosectiontext    
+    font-size: 12px
+    margin-top: 24px
+    margin-bottom: 48
 
 .herosectionleft div
     text-align: center        
 
 .herosectionleft h1, .herosectionleft p
     color: #ffffff 
-    // font-family: 'Plus Jakarta Sans'
     font-style: normal
     justify-content: center
    
@@ -49,7 +60,7 @@
 .button
     background-color: #F60
     border-radius: 1000px
-    padding-top: 22px
+    padding-top: 24px
     padding-bottom: 22px
     padding-right: 64px
     padding-left: 64px
@@ -64,7 +75,48 @@
 
 .button img
     margin-left: 8px
-.orangeText
-    color: var(--secondary-color)    
 
-    
+.orangeText
+    color: var(--secondary-color)  
+
+
+
+@media only screen and (max-width: 600px) 
+    .herosection
+        padding: 30px 0 30px 0
+        margin: 0
+        flex-direction: column
+        align-items: normal
+
+    .herosectionleft
+        width: 100%
+        padding: 20px
+        
+    .herosectionleft h1
+        //font-size: 30px
+        line-height: 36px
+
+    .herosectionleft p
+        font-size: 14px
+        line-height: 16px  
+
+    .herosectionright
+        width: 100%
+        
+
+    .herosectionright img
+        width: 100%
+        height: 100%
+        object-fit: cover    
+
+    .button
+        margin-top: 16px
+        margin-bottom: 16px
+        font-size: 16px
+        
+
+    .button img
+        margin-left: 2px 
+        width: 8px
+        height: 8px   
+             

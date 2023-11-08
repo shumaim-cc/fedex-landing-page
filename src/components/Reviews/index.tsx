@@ -1,13 +1,13 @@
 import React from 'react'
 import styles from './Reviews.module.sass'
-import Image, { StaticImageData } from 'next/image'
+import Image from 'next/image'
 import { Star } from '../Icons'
 
 interface ReviewsProps {
   title: string
   rating: number
   text: string
-  image: string | StaticImageData
+  image: string 
 }
 
 const Reviews = ({ rating, text, title, image }: ReviewsProps) => {
@@ -15,7 +15,7 @@ const Reviews = ({ rating, text, title, image }: ReviewsProps) => {
     <div className={styles.card}>
       <div className={styles.cardheader}>
           <div className={styles.image}>
-            <Image src={image} alt={title} width={48} height={48} />
+            <Image src={image} width={48} height={48} alt={title}/>
           </div>
           <div>
               <h2>{title}</h2>
