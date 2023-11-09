@@ -26,7 +26,7 @@ const Reviews = ({ rating, text, title, image }: ReviewsProps) => {
               </div>
           </div>
       </div>
-      <p>{text}</p>
+      <p className={styles.cardtext}>{text}</p>
     </div>
   )
 }

@@ -8,8 +8,8 @@ const Footer = () => {
   return (
     <div className={styles.footer}>
       <div className={styles.footerleft}>
-        <div>
-          <Image src={f1} height={65} width={141} alt="powered by hellogov" />
+        <div className={styles.footerimage1}>
+          <Image src={f1} alt="powered by hellogov" />
         </div>
         <div className={styles.footertext}>
           <div className={styles.footertext1}>
@@ -23,8 +23,12 @@ const Footer = () => {
       </div>
 
       <div className={styles.footerright}>
-        <Image src={f2} height={55} width={109} alt="powered by hellogov" />
-        <Image src={f3} height={59} width={140} alt="powered by hellogov" />
+        <div className={styles.footerimage2}>
+          <Image src={f2} alt="powered by verisign" />
+        </div>
+        <div className={styles.footerimage3}>
+          <Image src={f3} alt="trusted site" />
+        </div>
       </div>
     </div>
   )
