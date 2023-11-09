@@ -6,7 +6,7 @@ import Image from 'next/image'
 import styles from './Footer.module.sass'
 const Footer = () => {
   return (
-    <div className={styles.footer}>
+    <footer className={styles.footer}>
       <div className={styles.footerleft}>
         <div className={styles.footerimage1}>
           <Image src={f1} alt="powered by hellogov" />
@@ -30,7 +30,7 @@ const Footer = () => {
           <Image src={f3} alt="trusted site" />
         </div>
       </div>
-    </div>
+    </footer>
   )
 }
 

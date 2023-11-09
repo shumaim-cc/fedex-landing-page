@@ -32,12 +32,18 @@
 .footerright
     gap: 13px
     display: flex
-    align-items: center
+    align-items: end
     justify-content: flex-end
 
 .footerimage1
     height: 65px
-    width: 141px    
+    width: 141px   
+
+.footer img
+    width: 100%
+    height: 100%
+    object-fit: cover
+
 
 .footerimage2
     height: 55px
@@ -56,8 +62,27 @@
         //gap: 9px
         font-size: 10px
     
-    .footerright
+    .footerleft, .footertext, .footertext1, .footer
         flex-direction: column
+    
+    .footertext1 
+        gap: 5px
+        align-items: flex-start
+    
+    .footertext1 p
+        margin: 0
+    
+    .footertext1 p
+        font-size: 12px
+
+    .footertext2
+        font-size: 10px
+
+    .footerright
+        justify-content: space-between
+        align-items: center
+        margin-top: 5px
+        gap: 0
         
 
     
