@@ -1,8 +1,0 @@
-export { default as logo } from './logo.png'
-export { default as contact } from './contact.png'
-export { default as herosection } from './herosection.png'
-export { default as arrow } from './arrow.png'
-export { default as s1 } from './s1.png'
-export { default as s2 } from './s2.png'
-export { default as s3 } from './s3.png'
-export { default as person } from './person.png'

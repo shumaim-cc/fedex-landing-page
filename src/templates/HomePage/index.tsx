@@ -1,8 +1,11 @@
-import HeroSection from '@/components/HeroSection'
-import ServicesCards from '@/components/ServicesCards'
-import Details from '@/components/Details'
-import Reviews from '@/components/Reviews'
-import FAQs from '@/components/FAQs'
+import {
+  HeroSection,
+  ServicesCards,
+  Details,
+  Reviews,
+  FAQs,
+} from '@/components/'
+
 import { QUESTIONS, ReviewCardData } from '@/utils'
 import styles from './Home.module.sass'
 
@@ -44,12 +47,16 @@ const HomePage = () => {
             Getting government documents <br /> doesn’t have to be confusing.
           </h1>
         </div>
-        
+
         <div>
           {QUESTIONS.map((item, i) => {
             return (
               <div key={i}>
-                <FAQs title={item.title} question={item.question || 'no ques' } paragraph={item.description} />
+                <FAQs
+                  title={item.title}
+                  question={item.question || 'no ques'}
+                  paragraph={item.description}
+                />
               </div>
             )
           })}
